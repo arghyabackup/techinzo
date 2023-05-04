@@ -1,0 +1,602 @@
+{
+	"info": {
+		"_postman_id": "63b548ba-ff74-4ae8-aadb-92d646751959",
+		"name": "techinzo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Arghya ",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "arghya11@gmail.com ",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1234569234",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456 ",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "Worker ",
+							"type": "text"
+						},
+						{
+							"key": "adhar_number",
+							"value": "123456 ",
+							"type": "text"
+						},
+						{
+							"key": "annual_income",
+							"value": "1000 ",
+							"type": "text"
+						},
+						{
+							"key": "agent",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "13-10-1992 ",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "kolkata",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/agent/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Email Checked",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "arghya@gmail.com ",
+							"type": "text"
+						},
+						{
+							"key": "agent",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/agent/email_checked"
+			},
+			"response": []
+		},
+		{
+			"name": "Phone Checked",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "123456231",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/agent/phone_checked"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "agent",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/agent/get_user_data"
+			},
+			"response": []
+		},
+		{
+			"name": "Load Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "loan_type",
+							"value": "Personal",
+							"type": "text"
+						},
+						{
+							"key": "agent_id",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "rate_interest",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/loan/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Insurance Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "insurance_type",
+							"value": "ABC",
+							"type": "text"
+						},
+						{
+							"key": "agent_id",
+							"value": " 2",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/insurance/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Insurance By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "insurance_id",
+							"value": "1\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/insurance/get_insurance_by_id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Loan By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/loan/get_loan_by_id"
+			},
+			"response": []
+		},
+		{
+			"name": "Loan Listing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://127.0.0.1/techinzo/loan/listing"
+			},
+			"response": []
+		},
+		{
+			"name": "Insurance Listing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://127.0.0.1/techinzo/insurance/listing"
+			},
+			"response": []
+		},
+		{
+			"name": "Agent Listing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://127.0.0.1/techinzo/agent/agent_listing"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Loan By Agent Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "agent_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/loan/get_loan_by_agentId"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Insurance By Agent Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "agent_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/insurance/get_insurance_by_agentId"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Loan By Agent Id with Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "agent_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/loan/get_loan_by_agentId_with_transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Insurance By Agent Id with Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "agent_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/insurance/get_insurance_by_agentId_with_transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "Loan delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/loan/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "Insurance delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "insurance_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/insurance/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "transaction_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/transaction/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "Insurance Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "insurance_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "from_account",
+							"value": "23123",
+							"type": "text"
+						},
+						{
+							"key": "to_account",
+							"value": "99999",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/transaction/insurance"
+			},
+			"response": []
+		},
+		{
+			"name": "Loan Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "from_account",
+							"value": "99999",
+							"type": "text"
+						},
+						{
+							"key": "to_account",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/transaction/loan"
+			},
+			"response": []
+		},
+		{
+			"name": "Load Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "300",
+							"type": "text"
+						},
+						{
+							"key": "loan_type",
+							"value": "Personal",
+							"type": "text"
+						},
+						{
+							"key": "agent_id",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "rate_interest",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/loan/edit"
+			},
+			"response": []
+		},
+		{
+			"name": "Insurance Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "insurance_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "400",
+							"type": "text"
+						},
+						{
+							"key": "insurance_type",
+							"value": "ABC",
+							"type": "text"
+						},
+						{
+							"key": "agent_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "24",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/insurance/edit"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "1234569234",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "agent",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1/techinzo/agent/login"
+			},
+			"response": []
+		}
+	]
+}
